@@ -1,0 +1,16 @@
+await coin.transfer("0xC591D9827B9D43277DA64e394A527aEBeB524E07",4)
+await coin.transfe("0xC591D9827B9D43277DA64e394A527aEBeB524E07",4)
+await coin.transferFrom(accounts[0],"0xC591D9827B9D43277DA64e394A527aEBeB524E07",4)
+await coin.transferFrom(accounts[0],account[1],4)
+(await coin.balanceOf(accounts[0])).toString()
+await coin.mint(accounts[0],2)
+(await coin.balanceOf(accounts[0])).toString()
+await coin.decimals()
+await coin.name()
+await coin.mint(accounts[0],2)
+(await coin.balanceOf(accounts[0])).toString()
+await coin.decimals()
+await coin.name()
+let accounts = await ethers.provider.listAccounts();
+const coin = await Coin.attach('0x52C84043CD9c865236f11d9Fc9F56aa003c1f922');
+const Coin = await ethers.getContractFactory('NewTestToken');
